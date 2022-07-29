@@ -1,0 +1,159 @@
+body{
+    overflow-x: hidden;
+    background-color: rgb(219, 177, 177)
+    /* background-image: linear-gradient(#ff7722,#fff,rgb(91, 233, 91)); */
+}
+
+.NAV a{
+text-decoration: NONE;
+color: rgb(2, 2, 197);
+font-family:cursive;
+padding: 8px;
+font-weight: 800;
+font-size: large;
+}
+
+.POLICY{
+    DISPLAY: FLEX;
+    border-radius: 3vh;
+    outline: none;
+    border: none;
+    margin: auto;
+    width: 150px;
+    height: 25px;
+    padding: 5px 19px;
+    background-color: rgb(206, 135, 236);
+    font-weight: 700;
+    cursor: pointer;
+}
+#Grade{
+    width: 100%;
+    display: flexbox;
+    margin: auto;
+    margin-top: 3vh;
+    outline: NONE;
+    border: NONE;
+}
+
+.SYLLABUS {
+    border-radius: 3vh;
+    width: 70%;
+    height: 450px;
+    margin: auto;
+    display: flex;
+    margin-top:11vh;
+    overflow-y: scroll;
+    background-color: PINK; /* For browsers that do not support gradients */
+    background-image: linear-gradient(PINK, rgb(131, 219, 235),rgb(187, 96, 101));
+    display:none
+}
+.SCIENCE {
+    display: flexbox;
+    margin: auto;
+    padding: 10px 40px;
+    /* border: 2px solid black; */
+}
+
+.SCIENCE2{
+    display: flexbox;
+    margin: auto;
+    padding: 10px 40px;
+    /* border: 2px solid black; */
+    display: none;
+}
+
+.SCIENCE3{
+    display: flexbox;
+    margin: auto;
+    padding: 10px 40px;
+    /* border: 2px solid black; */
+    display: none;
+}
+
+.SCIENCE4{
+    display: flexbox;
+    margin: auto;
+    padding: 10px 40px;
+    /* border: 2px solid black; */
+    display: none;
+}
+.NINETH{
+    text-decoration: none;
+    color: blueviolet;
+    font-weight: 600;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    height: 10px;
+    width: 300px;
+}
+
+.Stbtn{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#btn{
+    width: 180px;
+    border-radius: 10px;
+    height: 40px;
+    font-weight: 900;
+    background: rgb(255 228 196);
+    border: none;
+    outline: none;
+    display: none;
+}
+
+.Read{
+    display: block;
+    font-weight: 800;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: flex;
+    margin: auto;
+}
+
+#TIMER{
+  display: flex;
+  justify-content: center;
+  display: none;
+}
+
+.SPAN1{
+    color: BLACK;
+    font-weight: 800;
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+    margin-top: 5vh;
+    display: flex;
+}
+
+
+
+
+@media screen and(max-width:320px) {
+    .SCIENCE{
+        font-size: 12px;
+        font-family:  Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    .SCIENCE2{
+        font-size: 12px;
+        font-family:  Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    .SCIENCE3{
+        font-size: 12px;
+        font-family:  Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    .SCIENCE4{
+        font-size: 12px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+    .logo{
+        color: green;
+        font-size: 8px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+}
