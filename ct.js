@@ -57,6 +57,6 @@ function select() {
 
 
 function myfunction(){
-    location.replace('http://127.0.0.1:5500/testyself/maintest.html')
+    location.replace('https://abcd1234125.github.io/BUILDUP.githuub.io/maintest.html');
 }
 
