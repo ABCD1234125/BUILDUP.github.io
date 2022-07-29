@@ -47,7 +47,7 @@ function select() {
 // for setting timer 
  let timer2  = 10;
  var mytimer = setInterval(() => {
-    document.getElementById("TIMER").innerHTML = "PLEASE WAIT FOR " + timer2-- +" SEC(means 24 hours)";
+    document.getElementById("TIMER").innerHTML = "PLEASE WAIT FOR " + timer2-- +" SEC";
     if(timer2 == 0){
         clearInterval(mytimer);
         document.getElementById("btn").disabled = false;
