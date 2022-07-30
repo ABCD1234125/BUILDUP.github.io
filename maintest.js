@@ -39,6 +39,8 @@ function btn() {
     document.getElementById("Correct").innerText = 10;
     document.getElementById("click").style.display = 'block';
     document.querySelector(".input").style.display = 'block';
+    document.getElementById("AGAIN").style.display  = "block"
+    document.getElementById("MEMBERS").style.display = "block";
 
   }
 
