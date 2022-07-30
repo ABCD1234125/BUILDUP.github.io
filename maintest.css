@@ -251,13 +251,46 @@ text-align: center;
     float: right;
 }
 
-.MEMBERS{
+#MEMBERS{
     border: 2PX SOLID BLACK;
-    height: max-content;
-    background-color: #ffffff;
+    height:10VH;
+    background-color: #d15a5a;
     border-radius: 3VH;
 }
+
+#AGAIN{
+    margin-top: 10PX;
+    width: 330px;
+    border-radius: 10px;
+    height: 30px;
+    font-weight: 900;
+    background: rgb(238, 27, 168);
+    border: none;
+    outline: none;
+    display: flex;
+    margin: auto;
+    padding: 5px 35px;
+    background-color: #f3e8fc;
+    display: none;
+    margin-top: 10px;
+    bottom: 10px;
+}
  
+
+.msg{
+    /* border: 2px solid rgb(0 0 0); */
+    width: 490px;
+    border-radius: 3vh;
+    height: 35px;
+    display: flex;
+    margin: auto;
+    background-color: rgb(255 228 196);
+    justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 800;
+    PADDING:5PX;
+    margin-top: 10px;
+}
 
 
 
@@ -361,6 +394,29 @@ text-align: center;
 
 
 @media screen and(min-width:360px),(max-width:740px){
+
+    #Correct{
+        font-size: 12px;
+    }
+
+    #qna{
+     font-size: x-small;
+    }
+
+    .msg{
+        width:120px;
+        font-size: 8px;
+
+    }
+    
+    .input{
+        width:160px;
+
+    }
+
+    #AGAIN{
+        width:190px;
+    }
 
     .TESTTIMER{
         font-size: 8px;
