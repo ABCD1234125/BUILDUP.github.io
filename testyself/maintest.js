@@ -3,7 +3,7 @@ console.log("hello")
 
 console.log("CLEAR THE TEST");
 
-let timer = 200;
+let timer = 100;
 let Examtimer = setInterval(() => {
   document.querySelector('.TESTTIMER').innerHTML = " YOUR EXAM WILL BE OVER IN -: " + timer-- + "s (3:20 s)";
   if (timer == -1) {
@@ -11,8 +11,15 @@ let Examtimer = setInterval(() => {
     document.querySelector('.YO').innerHTML = "YOUR TEST IS AUTOMATICALLY SUBMITTED"
     clearInterval(Examtimer);
     document.querySelector('.input1').style.display = 'none';
+    document.querySelector('.Q1').style.display = 'none'
+    document.querySelector('.Q2').style.display = 'none';
+    document.querySelector(".Q3").style.display = 'none';
+    document.querySelector(".Q4").style.display = 'none';
+    document.querySelector(".Q5").style.display = 'none';
+    document.querySelector(".Q6").style.display = 'none'
 
   }
+
 
 }, 1000);
 
@@ -26,7 +33,6 @@ function rdirect() {
 function btn() {
   let arr = ['VELOCITY', 'ANDROECIUM', 'SEPAL', 'OVARY,OVULE', 'ANAEMOPHILY', '4m']
   let testContainer = document.querySelectorAll(".input1");
-  document.getElementById("click").style.display = 'block';
   document.querySelector(".input").style.display = 'block';
   let Container = document.querySelectorAll('.testContainer');
   if (testContainer[0].value == "VELOCITY" && testContainer[1].value == "ANDROECIUM" && testContainer[2].value == "SEPAL" && testContainer[3].value == "OVARY,OVULE" && testContainer[4].value == "ANAEMOPHILY" && testContainer[5].value == "4m") {
@@ -38,8 +44,9 @@ function btn() {
 
   else if ([testContainer][0] || [1] || [2] || [3] || [4] || [5].value !== arr[0] || arr[1] || arr[2] || arr[3] || arr[4] || arr[5]) {
     document.getElementById("qna").innerHTML = "SOMETHING IS NOT CORRECT FIND THE MISTAKE BY YOURSELF"
-    document.getElementById("click").style.display = 'none';
     document.querySelector(".input").style.display = 'none';
+    document.getElementById("AGAIN").style.display = 'none'
+    document.getElementById("MEMBERS").style.display = 'none';
   }
   // else if ([testContainer][0] || [1] || [2] || [3] || [4] || [5].value.length == "0") {
   //   return info;
@@ -47,14 +54,8 @@ function btn() {
   // let info = alert("HEY TYPE THE ANSWER IN THE INPUT BOX");
 }
 
-function myfunction() {
-  let input = document.querySelector('.input');
+function again() {
+  let input = document.querySelector(".input");
   let name = [input.value];
-  // console.log(name)
-  document.getElementById("name").innerHTML = " A NEW STUDENT NAME " + name + " JOINED"
-
-  if (input.value == input.value) {
-    document.querySelector(".name").style.display = 'none';
-    document.getElementById("click").style.display = 'none'
-  }
+  document.querySelector('.msg').innerHTML = "A NEW STUDENT NAME : " + name + " JOINED";
 }
