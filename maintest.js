@@ -26,9 +26,6 @@ let Examtimer = setInterval(() => {
 
 
 // to check whether the value writtn is correct or not 
-function rdirect() {
-  location.replace('http://127.0.0.1:5500/testyself/CheckResult.html');
-}
 
 function btn() {
   let arr = ['VELOCITY', 'ANDROECIUM', 'SEPAL', 'OVARY,OVULE', 'ANAEMOPHILY', '4m']
@@ -53,7 +50,7 @@ function btn() {
       //if user deny or allow the permision 
       if (Notification.permission === "granted") {
         showNotification();
-      } else if (Notification.permission !== 'denied') {
+      } else if (Notification.permission === 'denied') {
         Notification.requestPermission().then(permission => {
           if (permission === "granted") {
             showNotification();
