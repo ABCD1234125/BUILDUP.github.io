@@ -66,7 +66,7 @@ setTimeout(() => {
     setTimeout(() => {
   document.getElementById("animate").style.display = 'block';
   document.getElementById("load").innerHTML = 'YOU GOT 10/10 HURRAy!'
-}, 15000);
+}, 5000);
   }
 
   else if ([testContainer][0] || [1] || [2] || [3] || [4] || [5].value !== arr[0] || arr[1] || arr[2] || arr[3] || arr[4] || arr[5]) {
