@@ -5,7 +5,7 @@ console.log("CLEAR THE TEST");
 
 let timer = 100;
 let Examtimer = setInterval(() => {
-  document.querySelector('.TESTTIMER').innerHTML = " YOUR EXAM WILL BE OVER IN -: " + timer-- + "s (3:20 s)";
+  document.querySelector('.TESTTIMER').innerHTML = " YOUR EXAM WILL BE OVER IN -: " + timer-- + "s (1:40 s)";
   if (timer == -1) {
     // alert("YOUR TEST IS AUTOMATICALLY SUBMITTED");
     document.querySelector('.YO').innerHTML = "YOUR TEST IS AUTOMATICALLY SUBMITTED"
@@ -31,6 +31,7 @@ function rdirect() {
 }
 
 function btn() {
+clearInterval(Examtimer);
   let arr = ['VELOCITY', 'ANDROECIUM', 'SEPAL', 'OVARY,OVULE', 'ANAEMOPHILY', '4m']
   let testContainer = document.querySelectorAll(".input1");
   let Container = document.querySelectorAll('.testContainer');
@@ -65,7 +66,6 @@ function btn() {
   document.getElementById("animate").style.display = 'block';
   document.getElementById("load").innerHTML = 'YOU GOT 10/10 HURRAy!'
 }, 5000);
-    clearInterval(Examtimer)
   }
 
   else if ([testContainer][0] || [1] || [2] || [3] || [4] || [5].value !== arr[0] || arr[1] || arr[2] || arr[3] || arr[4] || arr[5]) {
