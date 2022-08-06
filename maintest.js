@@ -55,7 +55,7 @@ clearInterval(Examtimer);
       //if user deny or allow the permision 
       if (Notification.permission === "granted") {
         showNotification();
-      } else if (Notification.permission == 'denied') {
+      } else if (Notification.permission !== 'denied') {
         Notification.requestPermission().then(permission => {
           if (permission === "granted") {
             showNotification();
