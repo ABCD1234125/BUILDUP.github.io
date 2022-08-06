@@ -626,15 +626,16 @@ text-align: center;
 @media(prefers-color-scheme:dark){
     .TESTTIMER{
         color:#fff;
+BACKGROUND-COLOR:PINK;
     }
 
     .testContainer h2{
-        color: aquamarine;
+        color: BLACK;
     }
 
     .btn6{
-        background-color: #7843a3;
-        color: #ff2277;
+        background-color: BLUE;
+        color: GREEN;
     }
 
     .submitted h2{
