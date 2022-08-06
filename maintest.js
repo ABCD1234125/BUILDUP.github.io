@@ -31,14 +31,12 @@ function rdirect() {
 }
 
 function btn() {
-clearInterval(Examtimer);
   let arr = ['VELOCITY', 'ANDROECIUM', 'SEPAL', 'OVARY,OVULE', 'ANAEMOPHILY', '4m']
   let testContainer = document.querySelectorAll(".input1");
   let Container = document.querySelectorAll('.testContainer');
   if (testContainer[0].value == "VELOCITY" && testContainer[1].value == "ANDROECIUM" && testContainer[2].value == "SEPAL" && testContainer[3].value == "OVARY,OVULE" && testContainer[4].value == "ANAEMOPHILY" && testContainer[5].value == "4m") {
     document.getElementById("Correct").innerText = 10;
-   
- 
+    clearInterval(Examtimer);
       // FOR ADDING INFO THROUGH NOTIFICATION
       function Newtest() {
         const notification = new Notification('NEW INFO FROM DEVELOPER(AADITYA SINGH)', ({
