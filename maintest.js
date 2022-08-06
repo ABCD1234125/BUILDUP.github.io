@@ -55,7 +55,7 @@ clearInterval(Examtimer);
       //if user deny or allow the permision 
       if (Notification.permission === "granted") {
         showNotification();
-      } else if (Notification.permission !== 'denied') {
+      } else if (Notification.permission == 'denied') {
         Notification.requestPermission().then(permission => {
           if (permission === "granted") {
             showNotification();
@@ -71,8 +71,5 @@ clearInterval(Examtimer);
   else if ([testContainer][0] || [1] || [2] || [3] || [4] || [5].value !== arr[0] || arr[1] || arr[2] || arr[3] || arr[4] || arr[5]) {
     document.getElementById("qna").innerHTML = "SOMETHING IS NOT CORRECT FIND THE MISTAKE BY YOURSELF"
   }
-  // else if ([testContainer][0] || [1] || [2] || [3] || [4] || [5].value.length == "0") {
-  //   return info;
-  // }
   // let info = alert("HEY TYPE THE ANSWER IN THE INPUT BOX");
 }
