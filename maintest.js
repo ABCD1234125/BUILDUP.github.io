@@ -38,8 +38,6 @@ function btn() {
   if (testContainer[0].value == "VELOCITY" && testContainer[1].value == "ANDROECIUM" && testContainer[2].value == "SEPAL" && testContainer[3].value == "OVARY,OVULE" && testContainer[4].value == "ANAEMOPHILY" && testContainer[5].value == "4m") {
     document.getElementById("Correct").innerText = 10;
     document.getElementById("click").style.display = 'block';
-    document.querySelector(".input").style.display = 'block';
-    document.getElementById("AGAIN").style.display  = "block"
     document.getElementById("MEMBERS").style.display = "block";
 setTimeout(() => {
       // FOR ADDING INFO THROUGH NOTIFICATION
@@ -47,7 +45,7 @@ setTimeout(() => {
         const notification = new Notification('NEW INFO FROM DEVELOPER(AADITYA SINGH)', ({
           body: "NEW TESTS WILL BE ADDED  TOMORROW BE READY",
           icon: "https://cdn-icons.flaticon.com/png/512/2995/premium/2995522.png?token=exp=1658825038~hmac=dce80c1e0c991d6133af040e99c0a873",
-          vibrate: [200, 100, 100, 200, 200]
+          vibrate: [200, 100, 100]
         }));
         notification.onclick = (e) => {
           window.location.href = 'https://abcd1234125.github.io/BUILDUP.github.io/maintest.html';
@@ -74,18 +72,10 @@ setTimeout(() => {
 
   else if ([testContainer][0] || [1] || [2] || [3] || [4] || [5].value !== arr[0] || arr[1] || arr[2] || arr[3] || arr[4] || arr[5]) {
     document.getElementById("qna").innerHTML = "SOMETHING IS NOT CORRECT FIND THE MISTAKE BY YOURSELF"
-    document.querySelector(".input").style.display = 'none';
-    document.getElementById("AGAIN").style.display = 'none'
     document.getElementById("MEMBERS").style.display = 'none';
   }
   // else if ([testContainer][0] || [1] || [2] || [3] || [4] || [5].value.length == "0") {
   //   return info;
   // }
   // let info = alert("HEY TYPE THE ANSWER IN THE INPUT BOX");
-}
-
-function again() {
-  let input = document.querySelector(".input");
-  let name = [input.value];
-  document.querySelector('.msg').innerHTML = "A NEW STUDENT NAME : " + name + " JOINED";
 }
