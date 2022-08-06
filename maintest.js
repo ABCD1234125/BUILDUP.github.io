@@ -37,7 +37,7 @@ function btn() {
   if (testContainer[0].value == "VELOCITY" && testContainer[1].value == "ANDROECIUM" && testContainer[2].value == "SEPAL" && testContainer[3].value == "OVARY,OVULE" && testContainer[4].value == "ANAEMOPHILY" && testContainer[5].value == "4m") {
     document.getElementById("Correct").innerText = 10;
     document.getElementById("click").style.display = 'block';
-    document.getElementById("MEMBERS").style.display = "block";
+ 
 setTimeout(() => {
       // FOR ADDING INFO THROUGH NOTIFICATION
       function Newtest() {
