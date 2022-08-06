@@ -70,7 +70,6 @@ clearInterval(Examtimer);
 
   else if ([testContainer][0] || [1] || [2] || [3] || [4] || [5].value !== arr[0] || arr[1] || arr[2] || arr[3] || arr[4] || arr[5]) {
     document.getElementById("qna").innerHTML = "SOMETHING IS NOT CORRECT FIND THE MISTAKE BY YOURSELF"
-    document.getElementById("MEMBERS").style.display = 'none';
   }
   // else if ([testContainer][0] || [1] || [2] || [3] || [4] || [5].value.length == "0") {
   //   return info;
