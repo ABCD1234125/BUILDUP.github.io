@@ -41,7 +41,35 @@ function btn() {
     document.querySelector(".input").style.display = 'block';
     document.getElementById("AGAIN").style.display  = "block"
     document.getElementById("MEMBERS").style.display = "block";
-
+setTimeout(() => {
+      // FOR ADDING INFO THROUGH NOTIFICATION
+      function Newtest() {
+        const notification = new Notification('NEW INFO FROM DEVELOPER(AADITYA SINGH)', ({
+          body: "NEW TESTS WILL BE ADDED  TOMORROW BE READY",
+          icon: "https://cdn-icons.flaticon.com/png/512/2995/premium/2995522.png?token=exp=1658825038~hmac=dce80c1e0c991d6133af040e99c0a873",
+          vibrate: [200, 100, 100, 200, 200]
+        }));
+        notification.onclick = (e) => {
+          window.location.href = 'https://abcd1234125.github.io/BUILDUP.github.io/maintest.html';
+        }
+      }
+      Newtest();
+  
+      //if user deny or allow the permision 
+      if (Notification.permission === "granted") {
+        showNotification();
+      } else if (Notification.permission == 'denied') {
+        Notification.requestPermission().then(permission => {
+          if (permission === "granted") {
+            showNotification();
+          }
+        });
+      }
+}, 5000);
+    setTimeout(() => {
+  document.getElementById("animate").style.display = 'block';
+  document.getElementById("load").innerHTML = 'YOU GOT 10/10 HURRAy!'
+}, 15000);
   }
 
   else if ([testContainer][0] || [1] || [2] || [3] || [4] || [5].value !== arr[0] || arr[1] || arr[2] || arr[3] || arr[4] || arr[5]) {
