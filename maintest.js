@@ -48,15 +48,14 @@ function btn() {
       Newtest();
   
       //if user deny or allow the permision 
-      if (Notification.permission === "granted") {
-        showNotification();
-      } else if (Notification.permission === 'denied') {
-        Notification.requestPermission().then(permission => {
-          if (permission === "granted") {
-            showNotification();
-          }
-        });
-      }
+      navigator.serviceWorker.permission();
+Notification.requestPermission(function(permission) {
+  if (result === 'granted') {
+    navigator.serviceWorker.ready.then(function(permission) {
+      registration.showNotification('Notification with ServiceWorker');
+    });
+  }
+});
     setTimeout(() => {
   document.getElementById("animate").style.display = 'block';
   document.getElementById("load").innerHTML = 'YOU GOT 10/10 HURRAy!'
