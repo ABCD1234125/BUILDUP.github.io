@@ -52,7 +52,7 @@ function btn() {
 Notification.requestPermission(function(permission) {
   if (result === 'granted') {
     navigator.serviceWorker.ready.then(function(permission) {
-      registration.showNotification('Notification with ServiceWorker');
+      permission.showNotification('Notification with ServiceWorker');
     });
   }
 });
